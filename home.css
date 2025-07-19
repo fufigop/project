@@ -1,0 +1,163 @@
+css
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #020051;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  background-color: #ecdeff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Vintage Goods', cursive;
+  font-size: 1.8rem;
+  color: #950008;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.cta-btn {
+  background-color: #febfdc;
+  color: #950008;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.hero {
+  background-color: #ffeaf4;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  line-height: 1.4;
+  color: #020051;
+}
+
+.hero em {
+  font-style: italic;
+  color: #950008;
+}
+
+.hero span {
+  color: #950008;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  background-color: #950008;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.mission {
+  background-color: #020051;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.mission .intro {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.mission em {
+  color: #ffd4e8;
+}
+
+.about {
+  padding: 4rem 2rem;
+  background-color: #ffeaf4;
+}
+
+.about-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.about .text {
+  max-width: 500px;
+}
+
+.btn-outline {
+  border: 2px solid #950008;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  color: #950008;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.process {
+  padding: 4rem 2rem;
+  background-color: #ffd4e8;
+  text-align: center;
+}
+
+.process h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.process .steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.step {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.footer {
+  background-color: #950008;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+```
