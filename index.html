@@ -3,83 +3,136 @@ html
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Branding with Mony | Home</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roca+Two&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Vintage+Goods&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="main-header">
+  <!-- HEADER -->
+  <header class="header">
     <div class="container">
-      <h1 class="logo">Branding with Mony</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Enquire</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Contact</a></li>
+      <a href="index.html" class="logo">Branding with Mony</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="enquire.html">Enquire</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">Your Brand, Your Story</h1>
+      <p class="hero-subtitle">Crafting memorable, feminine & professional brand identities that speak your soul.</p>
+      <a href="services.html" class="btn btn-primary">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">About Branding with Mony</h2>
+      <p class="about-text">
+        At Branding with Mony, we specialize in elevating beauty, skincare, and female-led businesses
+        through creative brand strategy, captivating content creation, and flawless launch planning.
+        Your brand deserves to be authentic, elegant, and unforgettable.
+      </p>
+</div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="services-preview">
+    <div class="container">
+      <h2 class="section-title">Our Core Services</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Brand Strategy</h3>
+          <p>Define your unique voice and aesthetic that resonates deeply with your audience.</p>
+        </article>
+        <article class="service-card">
+          <h3>Content Creation</h3>
+          <p>Create feminine, engaging visuals and copy that stop the scroll and convert.</p>
+        </article>
+        <article class="service-card">
+          <h3>Launch Planning</h3>
+          <p>Strategic support to ensure your product or service makes a powerful debut.</p>
+        </article>
+      </div>
+      <a href="services.html" class="btn btn-secondary">View All Services</a>
+    </div>
+  </section>
+ <!-- PORTFOLIO PREVIEW -->
+  <section class="portfolio-preview">
+    <div class="container">
+      <h2 class="section-title">Featured Work</h2>
+      <div class="portfolio-grid">
+        <figure class="portfolio-item">
+          <img src="images/portfolio1.jpg" alt="Project 1" />
+          <figcaption>Elegant Skincare Brand Identity</figcaption>
+        </figure>
+        <figure class="portfolio-item">
+          <img src="images/portfolio2.jpg" alt="Project 2" />
+          <figcaption>Luxury Beauty Product Launch</figcaption>
+        </figure>
+        <figure class="portfolio-item">
+          <img src="images/portfolio3.jpg" alt="Project 3" />
+          <figcaption>Feminine Social Media Content</figcaption>
+        </figure>
+      </div>
+      <a href="portfolio.html" class="btn btn-secondary">Explore Portfolio</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS PREVIEW -->
+  <section class="testimonials-preview">
+    <div class="container">
+      <h2 class="section-title">Client Love</h2>
+      <div class="testimonial-slider">
+        <blockquote>
+          "Working with Mony transformed my brand — her vision and professionalism brought clarity and beauty to everything."
+          <footer>- Sarah K.</footer>
+        </blockquote>
+        <blockquote>
+          "A true partner in creating content that speaks to my audience with elegance and authenticity."
+          <footer>- Laila M.</footer>
+        </blockquote>
+      </div>
+      <a href="testimonials.html" class="btn btn-secondary">Read More Testimonials</a>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 Branding with Mony. All rights reserved.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
         </ul>
       </nav>
     </div>
-  </header>
-   <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h2>Your Brand. Your Magic.</h2>
-
-      <p>We bring your brand to life with elegance, creativity, and strategy.</p>
-      <a href="#" class="btn-primary">Explore Services</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about">
-    <div class="container">
-      <h3>Welcome to Branding with Mony</h3>
-      <p>We specialize in branding, content creation, and aesthetic marketing tailored for beauty, skincare, and feminine-led businesses. We don't just create visuals — we craft your brand story.</p>
-    </div>
-  </section>
-
-  <!-- Services Summary -->
-  <section class="services">
-    <div class="container">
-      <h3>Our Expertise</h3>
-      <div class="service-boxes">
-        <div class="service">
-          <h4>Brand Strategy</h4>
-          <p>Define your voice, mission, and visuals to stand out in your niche.</p>
-        </div>
-        <div class="service">
-          <h4>Content Creation</h4>
-          <p>Engaging, feminine, and scroll-stopping content for social media and beyond.</p>
-        </div>
-        <div class="service">
-          <h4>Launch Planning</h4>
-          <p>From pre-launch to post-launch, we help you plan for impact and conversions.</p>
-</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <div class="container">
-      <h3>Ready to Transform Your Brand?</h3>
-      <a href="#" class="btn-primary">Work With Us</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container">
-      <p>&copy; 2025 Branding with Mony. All rights reserved.</p>
-    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
+  
