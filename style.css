@@ -181,4 +181,196 @@ a:hover {
   max-width: 600px;
   margin-left: auto;
   margin-right:
-    
+    ``css
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #020051;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about {
+  background-color: #fff0f6;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Roca Two', serif;
+  color: #950008;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #020051;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+  .services-preview {
+  padding: 4rem 2rem;
+  background-color: #ffeaf4;
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.service-card {
+  background-color: #ffd4e8;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 8px 15px rgba(149, 0, 8, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  font-family: 'Roca Two', serif;
+  color: #950008;
+}
+
+.service-card p {
+  font-family: 'Montserrat', sans-serif;
+  color: #020051;
+  font-weight: 500;
+  font-size: 1rem;
+}
+  .portfolio-preview {
+  padding: 4rem 2rem;
+  background-color: #ecdeff;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(2, 0, 81, 0.2);
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+.portfolio-item figcaption {
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #950008;
+}
+
+.testimonials-preview {
+  padding: 4rem 2rem;
+  background-color: #ffd4e8;
+  text-align: center;
+}
+
+.testimonial-slider blockquote {
+  font-style: italic;
+  font-family: 'Vintage Goods', cursive;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #950008;
+}
+
+.testimonial-slider footer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #020051;
+}
+.footer {
+  background-color: #950008;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.footer-nav a {
+  color: #ffeaf4;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #febfdc;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .services-grid,
+  .portfolio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card,
+  .portfolio-item {
+    width: 90%;
+  }
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+background-color: #ffd4e8;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+  }
+  .nav ul.active {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* Navigation toggle script will use the class 'active' on ul */
+
+
