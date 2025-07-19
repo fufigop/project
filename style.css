@@ -101,7 +101,7 @@ a:hover {
 }
 
 .logo {
-  font-family: 'Vintage Goods', cursive;
+  font-family: 'Roca Two', cursive;
   font-size: 2rem;
   color: #950008;
   font-weight: normal;
@@ -160,6 +160,26 @@ a:hover {
 .hamburger::after {
   top: 8px;
 }
+css
+.nav-toggle.active .hamburger {
+  background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggle.active .hamburger::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+  transition: all 0.3s ease;
+}
+
 
 /* =============== HERO ===================== */
 .hero {
