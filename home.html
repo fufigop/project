@@ -1,92 +1,241 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Branding with Mony</title>
-  <link rel="stylesheet" href="home.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branding With Mony</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; background-color: #fff; color: #000; line-height: 1.6; }
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    .hero h1 span {
+      color: #ff0055;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+    }
+    .btn-primary {
+      background: #ff0055;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      background: #ff0055;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.5rem 0;
+      font-size: 1rem;
+      animation: scroll 10s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .section p {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .card {
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 1.5rem;
+      width: 300px;
+    }
+    .card h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .testimonial {
+      background: #fff0f5;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .testimonial span {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 2rem;
+        width: 200px;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      nav ul.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">MONY</div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <a class="cta-btn" href="#">Book Now</a>
-    </div>
+  <header>
+    <div class="logo">Branding <span style="color: #ff0055;">With</span> Mony</div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul id="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#enquire">Enquire</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h1>
-        Crafting <em>thoughtful</em>, <em>bespoke</em> +<br>
-        impactful brand identities + websites<br>
-        for <span>female-owned</span> businesses
-      </h1>
-      <a href="#" class="btn">Work With Us</a>
-    </div>
+    <h1>Smart Design for serious Brands...<br> I'm Building big brands that <span>Sells</span></h1>
+    <p>Crafting memorable branding and graphics for businesses that dare to be different</p>
+    <a href="#" class="btn-primary">Start your project</a>
   </section>
 
-  <!-- Mission -->
-  <section class="mission">
-    <div class="container">
-      <p class="intro">You don’t have to do it all...</p>
-      <h2>We make your business’ <em>outside</em> match its <em>inside</em></h2>
-      <p class="desc">
-        So you’re a business owner, we know how it feels to juggle it all. We're here to help you build a brand you’re proud of. From logos to websites to design strategy – we’ve got your back.
-      </p>
-    </div>
+  <div class="marquee">BOOKING*NOW BOOKING*NOW BOOKING*NOW BOOKING*NOW BOOKING*NOW</div>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>My name is Manar, a 22-year-old Egyptian Brand Designer. I’ve been working in branding since 2020, blending creativity with strategy to craft unique, impactful brand identities.</p>
+    <p>I help businesses connect with their audience through memorable, meaningful design.</p>
+    <h2>My Vision</h2>
+    <p>To shape the global design landscape by creating powerful, timeless brand identities that not only stand out but also create deep emotional connections.</p>
+    <h2>My Mission</h2>
+    <p>To leverage my years of freelance expertise to craft strategic, innovative, and impactful visual identities that inspire loyalty and elevate businesses to new heights.</p>
   </section>
 
-  <!-- About -->
-  <section class="about">
-    <div class="container">
-      <div class="about-grid">
-        <img src="images/team.jpg" alt="Team photo">
-        <div class="text">
-          <h3>Meet Jess + Rach</h3>
-          <p>
-            Co-founders of Studio Mony! We specialize in helping female-led brands shine online through strategy, identity and storytelling. We believe in personal connection and creative confidence.
-          </p>
-          <a href="#" class="btn-outline">Start Working With Us</a>
-        </div>
+  <section class="section">
+    <h2>Do you need to...</h2>
+    <div class="cards">
+      <div class="card">
+        <h4>Understand Your Individuality</h4>
+        <p>Your business deserves to find its unique identity. We'll find what makes you shine and attract the right audience.</p>
       </div>
-    </div>
-</section>
-
-  <!-- Design Process -->
-  <section class="process">
-    <div class="container">
-      <h2>Learn about our <em>design process</em></h2>
-      <div class="steps">
-        <div class="step"><h4>Ready...</h4><p>Get in touch & tell us your vision</p></div>
-        <div class="step"><h4>Set...</h4><p>Kick off call & brand discovery</p></div>
-        <div class="step"><h4>Go...</h4><p>Design in progress with feedback rounds</p></div>
-        <div class="step"><h4>Thrive...</h4><p>Launch your brand with confidence</p></div>
+      <div class="card">
+        <h4>Create Consistency</h4>
+        <p>Clear guidelines will help your brand show up consistently and build trust.</p>
+      </div>
+      <div class="card">
+        <h4>Build Your Cult Following</h4>
+        <p>Knowing your audience will drive your direction and build loyalty.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Branding with Mony. All rights reserved.</p>
+  <section class="section">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>“I’m absolutely in love with the Silky Sleep branding! It perfectly captures the soft, luxurious feel I envisioned.”</p>
+      <span>- SILKY SLEEP</span>
+    </div>
+    <div class="testimonial">
+      <p>“Working with you on The Flash Bash branding was an outstanding experience. It exceeded expectations.”</p>
+      <span>- THE FLASH BASH</span>
+    </div>
+    <div class="testimonial">
+      <p>“The branding for Lovely Bride was exceptional. Every detail felt intentional and elevated.”</p>
+      <span>- LOVELY BRIDE</span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo">Branding <span style="color: #ff0055;">With</span> Mony</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#enquire">Enquire</a>
     </div>
   </footer>
 
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
-
-  
